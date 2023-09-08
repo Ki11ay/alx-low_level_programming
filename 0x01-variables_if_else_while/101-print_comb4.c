@@ -7,35 +7,35 @@
 */
 int main(void)
 {
-        int i = 0;
+	int i = 0;
 
-        while (i <= 9)
-        {
-                int j = 0;
+	while (i <= 9)
+	{
+		int j = 0;
 
-                while (j <= 9)
-                {
+		while (j <= 9)
+		{
 			int k = 0;
 
-			while (k <=9)
+			while (k <= 9)
 			{
-                        if (i != j && i < j && j != k && j < k)
-                        {
-                                putchar(i + '0');
-                                putchar(j + '0');
-				putchar(k + '0');
-                                if (i + j + k != 24)
-                                {
-                                        putchar(',');
-                                        putchar(' ');
-                                }
-                        }
-			k++;
+				if (i != j && i < j && j != k && j < k)
+				{
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
+					if (i + j + k != 24)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+				k++;
 			}
-                        j++;
-                }
-                i++;
-        }
-        putchar('\n');
-        return (0);
+			j++;
+		}
+		i++;
+	}
+	putchar('\n');
+	return (0);
 }
