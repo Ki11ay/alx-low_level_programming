@@ -4,7 +4,7 @@
  *main - entry point
  *
  *Description : a C program which uses puts
- *return (0) (success)
+ *Return: always 0 (Success)
 */
 
 int main(void)
