@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- *main - entry point 
+ *main - entry point
  *
  *Description: prints the even fibonacci numbers less than 4000000
  *
- *Return; always 0 (success)
+ *Return: always 0 (success)
 */
 
 int main(void)
 {
 	unsigned long f1 = 0, f2 = 1, sum;
-	float p;
+	int p;
 
 	while (1)
 	{
@@ -26,7 +26,7 @@ int main(void)
 		f1 = f2;
 		f2 = sum;
 	}
-	printf("%f\n", p);
+	printf("%d\n", p);
 
 	return (0);
 }
