@@ -3,8 +3,7 @@
 /**
  * main - entry point
  *
- *Description: prints the first 50 fibonacci number 
- starting with 1 and 2 followed by a new line
+ *Description: prints the first 50 fibonacci numbers
  *
  *Return: always 0 (success)
 */
