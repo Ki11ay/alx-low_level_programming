@@ -3,7 +3,7 @@
 /**
  *main -  entry point
  *
- *Description: computes the sum of all the multiples of 3 & 5 belw 1024 
+ *Description: computes the sum of all the multiples of 3 & 5 belw 1024
  *
  *Return: always 0 (success)
 */
