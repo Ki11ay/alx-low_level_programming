@@ -12,10 +12,10 @@ void print_rev(char *a)
 {
 	int s = 0;
 
-	while (s[i])
-		i++;
+	while (a[s])
+		s++;
 
-	while (i--)
-		_putchar(s[i]);
+	while (s--)
+		_putchar(a[s]);
 	_putchar('\n');
 }
