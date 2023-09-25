@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- *print_diagrams - prints the sum of the two diagonals of a square matrix
+ *print_diagsums - prints the sum of the two diagonals of a square matrix
  *@a: Two dimension integer array
  *@size: the size of square array
  *Return: nothing
 */
 
-void print_diagrams(int *a, int size)
+void print_diagsums(int *a, int size)
 {
 	int i, d1 = 0, d2 = 0;
 
