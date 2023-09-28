@@ -14,7 +14,10 @@ int _sqrt_recursion(int n)
 	if (v * v == n)
 		return (v);
 	else if (v * v < n)
+	{
+		v++;
 		return (_sqrt_recursion(n));
+	}
 	else
 		return (-1);
 }
