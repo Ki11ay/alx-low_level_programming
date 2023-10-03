@@ -10,8 +10,7 @@
 char *argstostr(int ac, char **av)
 {
 	char *string, *s;
-	int a, b, c:
-	int len = 0;
+	int a, b, c, len = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -37,7 +36,7 @@ char *argstostr(int ac, char **av)
 
 		while (s[c])
 		{
-			str[b] = s[c];
+			string[b] = s[c];
 			c++;
 			b++;
 		}
