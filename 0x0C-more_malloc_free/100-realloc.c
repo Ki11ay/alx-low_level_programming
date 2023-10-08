@@ -9,9 +9,8 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *o;
+	void *o;
 	unsigned int a, n = new_size;
-	char *oo = ptr;
 
 	if (ptr == NULL)
 	{
@@ -28,10 +27,12 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	o = malloc(new_size);
 	if (o == NULL)
 		return (NULL);
+
 	if (new_size > old_size)
-		n = old_size;
-	for (a = 0; a < n; a++)
-		o[a] = oo[a];
-	free(ptr);
+	{
+		for (a = 0; a < old_size && a < new_size; a++)
+			*((char *)o + a) = *((char *)ptr + a);
+		free(ptr);
+	}
 	return (o);
 }
