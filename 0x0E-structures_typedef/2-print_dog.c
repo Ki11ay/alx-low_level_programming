@@ -2,11 +2,9 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
- *
- *
+ *print_dog - a function that prints a dog
+ *@d: the input dog to bring
+ *Return: nothing
 */
 
 void print_dog(struct dog *d)
